@@ -34,4 +34,8 @@ DELETE FROM Products WHERE product_id = 4;
 DELETE FROM Products WHERE price < 1000000;
 
 SELECT * FROM Products;
-SELECT * FROM Products WHERE stock > 15
+SELECT * FROM Products WHERE stock > 15;
+
+SELECT * FROM Products WHERE price >= 1000000 AND price <= 25000000;
+SELECT * FROM Products WHERE product_name != 'iPhone15' AND stock > 0;
+SELECT * FROM Products WHERE category_id != 1 AND price >= 500000
